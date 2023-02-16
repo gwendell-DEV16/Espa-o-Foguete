@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8"> 
+        <title>Placeholder, the old style</title>
+        <!-- O arquivo cpf.js contém a função validaCPF, que
+7 recebe uma string e retorna true ou false. --> 
+        <script src="cpf.js"></script>
+        <script>
+            function vCPF(i){i.setCustomValidity(validaCPF(i.value)?'':'CPF inválido!') }
+    </script>
+    </head>
+    <body>
+        <input name="q" value="Search here" onfocus="if(this.value=='Search here')this.value"> 
+        <hr><br>
+    <form>
+        <label>nome: <input name="nome" required></label>
+        <label>email: <input name="email" required></label>
+        <label>mensagem: <textarea name="mensagem" required></textarea></label>
+        <label>CPF: <input name="cpf" oniput="vCPF(this)"></label>
+        <input type="submit" name="action" value="salvar rascunho" formnovalidate> 
+        <input type="submit" name="action" value="Enviar"> 
+        <input type="submit" value="Enviar">
+    </form>
+    </body>   
+</html>
