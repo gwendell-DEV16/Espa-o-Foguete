@@ -1,0 +1,25 @@
+        body {
+            background-color: #2962ff;
+         }
+        h1{ 
+           text-align: center;  
+           color:rgb(255, 255, 255); 
+        }
+        h2{ 
+           text-align: center;  
+           color:rgb(250, 246, 246); 
+        } 
+        div.box {
+            width: 500px; 
+            /* display:inline-block;  */
+        }
+        .spacex{
+            font-size: 50px;
+            text-align: center;
+            color:rgb(250, 246, 246);
+        } 
+        .container{
+            width:1140px; 
+            margin-left: auto;
+            margin-right: auto;
+        } 
